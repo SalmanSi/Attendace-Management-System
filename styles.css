@@ -1,0 +1,334 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Color Palette 
+   - Deep Blue (Primary): #1A5F7A
+   - Soft Blue (Secondary): #159895
+   - Light Teal: #57C5B6
+   - Off-White Background: #f4f7f6
+   - Dark Gray Text: #333
+*/
+
+/* Header Styles */
+#header {
+    background-color: #1A5F7A;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#main-content {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+#header h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #159895;
+    padding: 0.5rem;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #57C5B6;
+}
+
+/* Form Styles */
+form {
+    background-color: white;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+form h2, form h3 {
+    color: #1A5F7A;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #57C5B6;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #159895;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1A5F7A;
+}
+
+/* Table Styles */
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+.attendance-table th {
+    background-color: #1A5F7A;
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.attendance-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #57C5B6;
+}
+
+.attendance-table tr:nth-child(even) {
+    background-color: #f4f7f6;
+}
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #159895;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1A5F7A;
+}
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #159895;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.attendance-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.attendance-title {
+    color: #1A5F7A;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.attendance-form {
+    width: 100%;
+}
+
+.students-list {
+    margin-bottom: 1.5rem;
+}
+
+.student-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border-bottom: 1px solid #57C5B6;
+}
+
+.student-row:last-child {
+    border-bottom: none;
+}
+
+.student-name {
+    flex-grow: 1;
+    font-weight: 500;
+    color: #333;
+}
+
+.student-attendance-controls {
+    display: flex;
+    align-items: center;
+}
+
+.present-checkbox {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.present-checkbox input {
+    margin-right: 0.5rem;
+}
+
+.comments-input {
+    padding: 0.5rem;
+    border: 1px solid #57C5B6;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.submit-attendance-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #159895;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-attendance-btn:hover {
+    background-color: #1A5F7A;
+}
+
+/* Student Attendance Styles */
+.student-attendance-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.attendance-header {
+    color: #1A5F7A;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.no-attendance-message {
+    text-align: center;
+    color: #696969;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.class-attendance-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.class-info {
+    background-color: #159895;
+    color: white;
+    padding: 1rem;
+}
+
+.class-info h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.class-info p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.attendance-table thead {
+    background-color: #f4f7f6;
+}
+
+.attendance-table th,
+.attendance-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #57C5B6;
+}
+
+.attendance-table th {
+    color: #1A5F7A;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.attendance-present {
+    background-color: rgba(87, 197, 182, 0.1);
+    color: #159895;
+}
+
+.attendance-absent {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #B22222;
+}
+
+
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+    .student-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .student-attendance-controls {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .comments-input {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}   

@@ -1,6 +1,8 @@
 <?php
 // Start the session if needed for authentication or user data
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 
 // Include the necessary header and navigation (this can be included at the top of the master page)
 ?>
@@ -20,10 +22,11 @@ session_start();
     <h1>NUST Attendance System</h1>
     <nav>
         <ul>
-            <li><a href="xinde.php">Home</a></li>
-            <li><a href="attendance.php">Attendance</a></li>
-            <li><a href="student_attendance.php">My Attendance</a></li>
+            <li><a href="login.php">Home</a></li>
+            <li><a href="teacher.php">Attendance</a></li>
+            <li><a href="student.php">My Attendance</a></li>
             <li><a href="logout.php">Logout</a></li>
+
         </ul>
     </nav>
 </div>
